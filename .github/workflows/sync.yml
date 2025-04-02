@@ -1,0 +1,67 @@
+name: Sync
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    name: Sync
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Fetch data and generate CSVs
+        run: |
+          python src/tor_nodes_parser.py
+      - name: Push data
+        run: |
+          find src -name '*.csv' -exec mv -t . {} +
+          if [ ! -f latest.all_v4.csv ] || [ "$(diff latest.all_v4.csv all_v4.csv)" != "" ]
+          then
+            mv all_v4.csv latest.all_v4.csv
+            git add latest.all_v4.csv
+          fi
+          if [ ! -f latest.all_v6.csv ] || [ "$(diff latest.all_v6.csv all_v6.csv)" != "" ]
+          then
+            mv all_v6.csv latest.all_v6.csv
+            git add latest.all_v6.csv
+          fi
+          if [ ! -f latest.guards_v4.csv ] || [ "$(diff latest.guards_v4.csv guards_v4.csv)" != "" ]
+          then
+            mv guards_v4.csv latest.guards_v4.csv
+            git add latest.guards_v4.csv
+          fi
+          if [ ! -f latest.guards_v6.csv ] || [ "$(diff latest.guards_v6.csv guards_v6.csv)" != "" ]
+          then
+            mv guards_v6.csv latest.guards_v6.csv
+            git add latest.guards_v6.csv
+          fi
+          if [ ! -f latest.exits_v4.csv ] || [ "$(diff latest.exits_v4.csv exits_v4.csv)" != "" ]
+          then
+            mv exits_v4.csv latest.exits_v4.csv
+            git add latest.exits_v4.csv
+          fi
+          if [ ! -f latest.exits_v6.csv ] || [ "$(diff latest.exits_v6.csv exits_v6.csv)" != "" ]
+          then
+            mv exits_v6.csv latest.exits_v6.csv
+            git add latest.exits_v6.csv
+          fi
+          if [[ `git diff --cached` ]]
+          then
+            git config user.name github-actions[bot]
+            git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+            git commit -m "chore: auto sync" -m "[skip ci]"
+            git push
+          fi
