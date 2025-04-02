@@ -31,10 +31,10 @@ def parse_tor_node(node):
         try:
             ip_obj = ipaddress.ip_address(ip)
             if isinstance(ip_obj, ipaddress.IPv4Address):
-                stix_pattern = f"[ipv4-addr:value = '{ip}' AND network-traffic:dst_port = {port}]"
+                stix_pattern = f"[ipv4-addr:value = '{ip}' AND network-traffic:src_port = {port}]"
                 csv_rows_v4.append([node["fingerprint"], ip, port, stix_pattern])
             elif isinstance(ip_obj, ipaddress.IPv6Address):
-                stix_pattern = f"[ipv6-addr:value = '{ip}' AND network-traffic:dst_port = {port}]"
+                stix_pattern = f"[ipv6-addr:value = '{ip}' AND network-traffic:src_port = {port}]"
                 csv_rows_v6.append([node["fingerprint"], ip, port, stix_pattern])
         except ValueError:
             continue
