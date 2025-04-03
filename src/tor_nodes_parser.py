@@ -12,7 +12,10 @@ GUARD_NODES_CSV_FILENAME_V6 = "guards_v6.csv"
 EXIT_NODES_CSV_FILENAME_V4 = "exits_v4.csv"
 EXIT_NODES_CSV_FILENAME_V6 = "exits_v6.csv"
 
-CSV_HEADER = ["fingerprint", "ipaddr", "port", "stix_pattern"]
+CSV_HEADER = [
+    "fingerprint", "ipaddr", "port", "stix_pattern",
+    "label_name", "label_color", "marking_type", "marking_value", "marking_priority"
+]
 
 def fetch_tor_nodes():
     url = "https://onionoo.torproject.org/details?search=type:relay%20running:true"
@@ -32,10 +35,16 @@ def parse_tor_node(node):
             ip_obj = ipaddress.ip_address(ip)
             if isinstance(ip_obj, ipaddress.IPv4Address):
                 stix_pattern = f"[ipv4-addr:value = '{ip}' AND network-traffic:src_port = {port}]"
-                csv_rows_v4.append([node["fingerprint"], ip, port, stix_pattern])
+                csv_rows_v4.append([
+                    node["fingerprint"], ip, port, stix_pattern,
+                    "tor", "#57C101", "TLP", "TLP:CLEAR", "1"
+                ])
             elif isinstance(ip_obj, ipaddress.IPv6Address):
                 stix_pattern = f"[ipv6-addr:value = '{ip}' AND network-traffic:src_port = {port}]"
-                csv_rows_v6.append([node["fingerprint"], ip, port, stix_pattern])
+                csv_rows_v6.append([
+                    node["fingerprint"], ip, port, stix_pattern,
+                    "tor", "#57C101", "TLP", "TLP:CLEAR", "1"
+                ])
         except ValueError:
             continue
 
