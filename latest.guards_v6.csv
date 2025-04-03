@@ -243,7 +243,6 @@ fingerprint,ipaddr,port,stix_pattern
 14FB2CBEB0F6AB4C9473A9AE06FC7BE11F61523C,2a01:4f8:1c1b:d25::1,443,[ipv6-addr:value = '2a01:4f8:1c1b:d25::1' AND network-traffic:src_port = 443]
 153460C0FE0945B0269999554E85534A2F709D8D,2a0f:ca80:1337::9969:dc10,8444,[ipv6-addr:value = '2a0f:ca80:1337::9969:dc10' AND network-traffic:src_port = 8444]
 15450640183D6488AFEFA8B50EE8E91F64AFE9AB,2a12:a800:2:1:45:141:215:40,110,[ipv6-addr:value = '2a12:a800:2:1:45:141:215:40' AND network-traffic:src_port = 110]
-15627B91E7B969EDD50E033CC6CF14B749283EDA,2a01:7e04::f03c:93ff:fe6e:f3a,443,[ipv6-addr:value = '2a01:7e04::f03c:93ff:fe6e:f3a' AND network-traffic:src_port = 443]
 1590FEC6EB001BBEE55E4E94239670B4038BEA79,2a01:4f8:150:14a4:beef::4,9001,[ipv6-addr:value = '2a01:4f8:150:14a4:beef::4' AND network-traffic:src_port = 9001]
 1600124262D8908982FBACDE02F747CA7FF6C2B8,2001:41d0:601:1100::352e,443,[ipv6-addr:value = '2001:41d0:601:1100::352e' AND network-traffic:src_port = 443]
 1607C3CF989C719F0FF767D632E1A7C0CC5EEC2A,2a01:4f9:3100:30aa::2,9001,[ipv6-addr:value = '2a01:4f9:3100:30aa::2' AND network-traffic:src_port = 9001]
