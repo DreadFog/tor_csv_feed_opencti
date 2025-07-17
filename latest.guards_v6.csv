@@ -371,6 +371,7 @@ fingerprint,ipaddr,port,stix_pattern,label_name,label_color,marking_type,marking
 20209021CE8B8732F8EE57D313A36FF8DC823E5E,2a0b:f4c2:2::41,10041,[ipv6-addr:value = '2a0b:f4c2:2::41' AND network-traffic:src_port = 10041],tor,#57C101,TLP,TLP:CLEAR,1
 2022BCB37453DC168E6CB7B4DAD119AC072F2DEE,2605:6400:30:f986:f96a:3b4d:e117:2050,80,[ipv6-addr:value = '2605:6400:30:f986:f96a:3b4d:e117:2050' AND network-traffic:src_port = 80],tor,#57C101,TLP,TLP:CLEAR,1
 20462CBA5DA4C2D963567D17D0B7249718114A68,2001:bc8:710:51f:dc00:ff:fe27:c7db,9001,[ipv6-addr:value = '2001:bc8:710:51f:dc00:ff:fe27:c7db' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
+20589C3F5EFC4B6C17B07F5B85330B40C8C0E207,2a04:6f00:4::1cf,443,[ipv6-addr:value = '2a04:6f00:4::1cf' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
 2063D2BF966CD086BAE411B18A559DB19F97395D,2a12:a800:9:1:193:26:115:140,110,[ipv6-addr:value = '2a12:a800:9:1:193:26:115:140' AND network-traffic:src_port = 110],tor,#57C101,TLP,TLP:CLEAR,1
 20974D28EB668E689D4256046E0E32034375A0A2,2a03:4000:2:ba4:88e9:eff:fe89:3637,9001,[ipv6-addr:value = '2a03:4000:2:ba4:88e9:eff:fe89:3637' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
 20B31CF54C093348A2D427DD1EBA26EFF998FB78,2a0a:4cc0:80:47a3::1,9001,[ipv6-addr:value = '2a0a:4cc0:80:47a3::1' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
