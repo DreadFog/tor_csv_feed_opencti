@@ -723,7 +723,6 @@ fingerprint,ipaddr,port,stix_pattern,label_name,label_color,marking_type,marking
 42F10D001B59C05B7929C190117F62D0E4CEAFB8,2602:f81c:81:bad:babe::206,465,[ipv6-addr:value = '2602:f81c:81:bad:babe::206' AND network-traffic:src_port = 465],tor,#57C101,TLP,TLP:CLEAR,1
 43028D0071DE055180DAA82DE200B42FD2131C23,2a0b:f4c2:2:1::209,8443,[ipv6-addr:value = '2a0b:f4c2:2:1::209' AND network-traffic:src_port = 8443],tor,#57C101,TLP,TLP:CLEAR,1
 432D9E4CCC0051D8DDEF405BB73E56379FDB0165,2a0e:4005:1002:ffff:185:40:4:100,10443,[ipv6-addr:value = '2a0e:4005:1002:ffff:185:40:4:100' AND network-traffic:src_port = 10443],tor,#57C101,TLP,TLP:CLEAR,1
-432F61F51321E204B85BD57CAAC7BB1409FF04E5,2a03:90c0:32:1::89,443,[ipv6-addr:value = '2a03:90c0:32:1::89' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
 43339B8C3F06FF5CC115F32D2A27045EB693D212,2001:678:6d4:7410::316,443,[ipv6-addr:value = '2001:678:6d4:7410::316' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
 4356DDFC83F8335E2AF395D5EA4CA28CC9E57C58,2607:b500:425:c000:0:d9f:fd98:556d,40242,[ipv6-addr:value = '2607:b500:425:c000:0:d9f:fd98:556d' AND network-traffic:src_port = 40242],tor,#57C101,TLP,TLP:CLEAR,1
 43620A053D56582673F74E0325831646E117C009,2a01:270:98d8::1,9100,[ipv6-addr:value = '2a01:270:98d8::1' AND network-traffic:src_port = 9100],tor,#57C101,TLP,TLP:CLEAR,1
