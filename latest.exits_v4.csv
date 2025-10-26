@@ -1,5 +1,4 @@
 fingerprint,ipaddr,port,stix_pattern,label_name,label_color,marking_type,marking_value,marking_priority
-000F3EB75342BE371F1D8D3FAE90890AEB5664EE,204.137.14.106,443,[ipv4-addr:value = '204.137.14.106' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
 0011254CC8444369B20EF11156B8990438221A54,178.218.144.18,443,[ipv4-addr:value = '178.218.144.18' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
 00251F9F626F0E741030AF54CE019B115D01697D,45.95.169.110,8430,[ipv4-addr:value = '45.95.169.110' AND network-traffic:src_port = 8430],tor,#57C101,TLP,TLP:CLEAR,1
 0036FA36AB435FD5D0F640626636867EBFB72C68,185.220.101.33,10133,[ipv4-addr:value = '185.220.101.33' AND network-traffic:src_port = 10133],tor,#57C101,TLP,TLP:CLEAR,1
