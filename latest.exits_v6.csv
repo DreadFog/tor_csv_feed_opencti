@@ -55,7 +55,6 @@ fingerprint,ipaddr,port,stix_pattern,label_name,label_color,marking_type,marking
 068FCA8801F66493EE75839752A30C860DF1AFEC,2605:a140:2262:7686::1,8430,[ipv6-addr:value = '2605:a140:2262:7686::1' AND network-traffic:src_port = 8430],tor,#57C101,TLP,TLP:CLEAR,1
 06A0482D3DED57CE8E0131531B3DB44A8AEF683C,2001:67c:e60:c0c:192:42:116:180,9006,[ipv6-addr:value = '2001:67c:e60:c0c:192:42:116:180' AND network-traffic:src_port = 9006],tor,#57C101,TLP,TLP:CLEAR,1
 06BF77AE0F419884B59C57747AD6286B42946DC5,2a12:a800:1:1:2:58:56:93,7430,[ipv6-addr:value = '2a12:a800:1:1:2:58:56:93' AND network-traffic:src_port = 7430],tor,#57C101,TLP,TLP:CLEAR,1
-06D034AA793F571CF223AB781A40B5ABACAA5A95,2a0f:df00:0:255::204,445,[ipv6-addr:value = '2a0f:df00:0:255::204' AND network-traffic:src_port = 445],tor,#57C101,TLP,TLP:CLEAR,1
 06E48BA174A19C2225F8F6EF733D5E58E4D20348,2a0d:bbc7::f816:3eff:fec7:9bc8,443,[ipv6-addr:value = '2a0d:bbc7::f816:3eff:fec7:9bc8' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
 06EC2C1669E5A811D9640E07CED5786DA50C5737,2a0b:f4c0:16c:11::1,9000,[ipv6-addr:value = '2a0b:f4c0:16c:11::1' AND network-traffic:src_port = 9000],tor,#57C101,TLP,TLP:CLEAR,1
 06F0BB4CDF4D75E5E8265A6270C10D2FDFE64AAA,2620:18c:0:192::e0:154,443,[ipv6-addr:value = '2620:18c:0:192::e0:154' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
@@ -70,6 +69,7 @@ fingerprint,ipaddr,port,stix_pattern,label_name,label_color,marking_type,marking
 07ACFB0801E4F74F5610F870B5FCBB5539DBCBD1,2a06:d380:0:103::63,9001,[ipv6-addr:value = '2a06:d380:0:103::63' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
 07DCECDF04BE5D470C615C8E1CCF086F74FC8CA6,2a12:a800:1:1:194:26:192:77,143,[ipv6-addr:value = '2a12:a800:1:1:194:26:192:77' AND network-traffic:src_port = 143],tor,#57C101,TLP,TLP:CLEAR,1
 080313C19FAD20FD64E3C664A39E5014A79BE6C6,2001:67c:289c:2::38,9050,[ipv6-addr:value = '2001:67c:289c:2::38' AND network-traffic:src_port = 9050],tor,#57C101,TLP,TLP:CLEAR,1
+08062152A807CAEFDCCE6A020F36FFC0656717EC,2602:fa5d:1::69,9001,[ipv6-addr:value = '2602:fa5d:1::69' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
 080D4210E54A62376A4A89E3B9CC98B2FB2D74D0,2605:a140:2262:7686::1,9000,[ipv6-addr:value = '2605:a140:2262:7686::1' AND network-traffic:src_port = 9000],tor,#57C101,TLP,TLP:CLEAR,1
 0813C4B60E7EDFA570273FB2B07954EDD6162959,2a12:a800:11:1:192:159:99:168,8100,[ipv6-addr:value = '2a12:a800:11:1:192:159:99:168' AND network-traffic:src_port = 8100],tor,#57C101,TLP,TLP:CLEAR,1
 083CE4D3E9DE1F3A93080976FCA45062386AAFC8,2a12:a800:2:1:45:138:16:69,7430,[ipv6-addr:value = '2a12:a800:2:1:45:138:16:69' AND network-traffic:src_port = 7430],tor,#57C101,TLP,TLP:CLEAR,1
@@ -682,6 +682,7 @@ fingerprint,ipaddr,port,stix_pattern,label_name,label_color,marking_type,marking
 48A9DC366D02C08979C0EEFF6D6F0439BD95B76C,2602:f6f6:2:39c1::1,9100,[ipv6-addr:value = '2602:f6f6:2:39c1::1' AND network-traffic:src_port = 9100],tor,#57C101,TLP,TLP:CLEAR,1
 48B1FB945E08E3FC0F880110D6A76C87FAD993F0,2a01:7e00::f03c:91ff:fe78:b382,9001,[ipv6-addr:value = '2a01:7e00::f03c:91ff:fe78:b382' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
 48F0A45B0A6247F2F4683EC5E77DEB5678BCAE36,2a0f:df00:0:255::203,445,[ipv6-addr:value = '2a0f:df00:0:255::203' AND network-traffic:src_port = 445],tor,#57C101,TLP,TLP:CLEAR,1
+48F164863CEBEC45B931A281FAF2CADAD4B1A1AD,2a14:c380:c70:a6:aaaa:bbbb:cccc:dddd,443,[ipv6-addr:value = '2a14:c380:c70:a6:aaaa:bbbb:cccc:dddd' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
 491B4E55B4FD4FDEC63B229B0A3E59868FCA1F1F,2001:67c:289c:4::79,80,[ipv6-addr:value = '2001:67c:289c:4::79' AND network-traffic:src_port = 80],tor,#57C101,TLP,TLP:CLEAR,1
 495146DC81E4AA013EDCEE20895ADEE153C5DB1C,2a06:1700:4:14c::5d9d:bc79,9001,[ipv6-addr:value = '2a06:1700:4:14c::5d9d:bc79' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
 4954B51AF0CBADA08E4BC389DF1E3E419535165A,2605:6400:20:be7::1,9001,[ipv6-addr:value = '2605:6400:20:be7::1' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
