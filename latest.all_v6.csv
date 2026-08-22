@@ -521,6 +521,7 @@ fingerprint,ipaddr,port,stix_pattern,label_name,label_color,marking_type,marking
 1851149F9CFB05971CF592FA00B9F29D8D71FDC4,2a0b:f4c2:1::174,20174,[ipv6-addr:value = '2a0b:f4c2:1::174' AND network-traffic:src_port = 20174],tor,#57C101,TLP,TLP:CLEAR,1
 18671DE5092C67883BFB2450C3267B92618BEC66,2a0b:f4c2:2:1::208,8443,[ipv6-addr:value = '2a0b:f4c2:2:1::208' AND network-traffic:src_port = 8443],tor,#57C101,TLP,TLP:CLEAR,1
 186F046D8895E13626B363B879BD15F38A52C6BC,2620:18c:0:192::e0:141,443,[ipv6-addr:value = '2620:18c:0:192::e0:141' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
+186F3135CC4A586E5261BC995E9C7B32853D7A54,2a0d:d940:1a:5a7::2,9001,[ipv6-addr:value = '2a0d:d940:1a:5a7::2' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
 187528ECDA723BFBEB80AA2906CA479F8D33E88B,2a0b:f4c2:1::150,10150,[ipv6-addr:value = '2a0b:f4c2:1::150' AND network-traffic:src_port = 10150],tor,#57C101,TLP,TLP:CLEAR,1
 188673CF3937442517301800F383BE53D4A17732,2003:fd:5718:5500:e65f:1ff:fe00:96c5,9001,[ipv6-addr:value = '2003:fd:5718:5500:e65f:1ff:fe00:96c5' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
 1893041B86FCED1A2CE2F9E2C5987F534B7DC3E0,2a03:e600:100::8,443,[ipv6-addr:value = '2a03:e600:100::8' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
@@ -2353,6 +2354,7 @@ fingerprint,ipaddr,port,stix_pattern,label_name,label_color,marking_type,marking
 6F204BA21C4F13A70200F7C3FC8586A6575F7B32,2620:7:6003::ffff:c759:e64f,82,[ipv6-addr:value = '2620:7:6003::ffff:c759:e64f' AND network-traffic:src_port = 82],tor,#57C101,TLP,TLP:CLEAR,1
 6F3E8A4D0D662592584B78FFD5F4F3A3C3E34C62,2800:ba0:2:ee01::8222,9001,[ipv6-addr:value = '2800:ba0:2:ee01::8222' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
 6F4397FE005FE94134231F9E5EBD94CF688E0034,2001:2042:7970:6f00:9c5a:89d6:5960:d21c,12443,[ipv6-addr:value = '2001:2042:7970:6f00:9c5a:89d6:5960:d21c' AND network-traffic:src_port = 12443],tor,#57C101,TLP,TLP:CLEAR,1
+6F53175220BE606B3D966F4762EA1B3ADA14BE90,2003:f8:ef19:3a00:4ecc:6aff:feb5:94c7,9001,[ipv6-addr:value = '2003:f8:ef19:3a00:4ecc:6aff:feb5:94c7' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
 6F5FD8B1FD485745CC22EB024E4B72974F31D66C,2a05:f480:2800:1e9f:5400:5ff:fed9:b071,22222,[ipv6-addr:value = '2a05:f480:2800:1e9f:5400:5ff:fed9:b071' AND network-traffic:src_port = 22222],tor,#57C101,TLP,TLP:CLEAR,1
 6F6F30BD563F0FF2937425A0DA0C4F0F53B39DD7,2001:41d0:701:1100::4434,9001,[ipv6-addr:value = '2001:41d0:701:1100::4434' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
 6F84A0F501FA16126151A22D810522184D997C0F,2602:f6f6:2:5c9c::1,9000,[ipv6-addr:value = '2602:f6f6:2:5c9c::1' AND network-traffic:src_port = 9000],tor,#57C101,TLP,TLP:CLEAR,1
@@ -2696,7 +2698,6 @@ fingerprint,ipaddr,port,stix_pattern,label_name,label_color,marking_type,marking
 7E98E3AD98D7AD4D707E82D4A596A12F78A701F7,2a0d:bbc7::f816:3eff:fee6:ca14,990,[ipv6-addr:value = '2a0d:bbc7::f816:3eff:fee6:ca14' AND network-traffic:src_port = 990],tor,#57C101,TLP,TLP:CLEAR,1
 7EA6EAD6FD83083C538F44038BBFA077587DD755,2a09:61c0::1337,443,[ipv6-addr:value = '2a09:61c0::1337' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
 7EA759ABE1D95C60D96B8A4F141A5BD4AF1815CB,2001:1600:13:101::3bb,443,[ipv6-addr:value = '2001:1600:13:101::3bb' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
-7EAAA9A9A1B0B834B74C60CDBBCE306CA7F91423,2001:19f0:c800:2a8c:5400:5ff:fe8c:69e3,9001,[ipv6-addr:value = '2001:19f0:c800:2a8c:5400:5ff:fe8c:69e3' AND network-traffic:src_port = 9001],tor,#57C101,TLP,TLP:CLEAR,1
 7EC4C310D1FB2A7C0943B810946EA354D64A2165,2a03:e600:100::7,443,[ipv6-addr:value = '2a03:e600:100::7' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
 7ED26BC451C8FD79FABDD2F9562A038758DB8181,2001:2040:c00f:9a::3:3943,443,[ipv6-addr:value = '2001:2040:c00f:9a::3:3943' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
 7EDCEA659F03D2F9D83CAB1386512F91C44A057B,2605:6f0a:2000:8::1154:ec81,443,[ipv6-addr:value = '2605:6f0a:2000:8::1154:ec81' AND network-traffic:src_port = 443],tor,#57C101,TLP,TLP:CLEAR,1
